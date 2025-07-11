@@ -1,0 +1,185 @@
+/* Card code start */
+  .course-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    background: #fff;
+  }
+
+  .course-card:hover {
+    background: #004080;
+    color: white;
+  }
+
+  .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .badge-weeks {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 6px;
+    display: none;
+    z-index: 2;
+  }
+
+  .course-card:hover .heart-icon {
+    display: block;
+  }
+
+  .heart-icon.liked {
+    color: red;
+
+  }
+
+  .course-body {
+    padding: 15px;
+    transition: all 0.3s ease;
+  }
+
+  .course-card:hover .course-details {
+    display: block;
+  }
+
+  .course-card:hover .tag {
+    display: block;
+  }
+
+  .course-details {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .tag {
+    display: none;
+  }
+
+  .enroll-btn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .course-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .course-price {
+    font-weight: bold;
+  }
+
+  /* 👇 Hide elements on hover */
+  .course-card:hover .text-muted,
+  .course-card:hover .badge-weeks,
+  .course-card:hover img {
+    display: none !important;
+  }
+
+  .detail-span {
+    font-size: 12px;
+    font-weight: 800;
+    color: #5C5C5C;
+  }
+
+  .details {
+    font-family: 12px;
+  }
+
+  .tag {
+    background-color: #fff;
+    padding: 2px 12px;
+    /* margin: 10px 10px; */
+    color: black;
+    margin-bottom: 18px;
+    margin-top: 40px;
+    border-radius: 5px;
+    width: 40%;
+  }
+   .stats-wrapper {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+  }
+
+  .stats-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    /* remove grid gap so borders meet perfectly */
+    max-width: 800px;
+    margin: 0 auto;
+    /* border: 1px solid #ddd; */
+  }
+
+  .stat-box {
+    padding: 30px 20px;
+    background-color: white;
+    /* border: 1px solid #ddd; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Optional: Add rounded corners to the outer stat boxes */
+  .stat-box:nth-child(1) {
+    border-top-left-radius: 12px;
+    border-right: 1px solid #ddd;
+  }
+
+  .stat-box:nth-child(2) {
+    /* border-top: 1px solid #ddd; */
+    border-top-right-radius: 12px;
+  }
+
+  .stat-box:nth-child(3) {
+    border-bottom-left-radius: 12px;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+
+  .stat-box:nth-child(4) {
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 12px;
+  }
+
+
+  .stat-number {
+    font-size: 50px;
+    font-weight: bold;
+    color: #004F75;
+    line-height: 54px;
+    font-weight: 800;
+
+  }
+
+  .stat-label {
+
+    color: #181818;
+  }

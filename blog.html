@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+  <!-- Google Fonts: Spartan -->
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .image-fixed {
+      max-height: 570px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 5px;
+      
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .image-fixed-1 {
+      max-height: 270px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .mb-para {
+      transition: max-height 0.3s ease;
+      font-family: Spartan;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0%;
+      vertical-align: bottom;
+    }
+
+    .logo-text {
+      font-family: Spartan;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0%;
+      vertical-align: bottom;
+
+    }
+
+    .logo-text-para {
+      font-family: Spartan;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0%;
+      vertical-align: bottom;
+
+    }
+     
+    .read-more {
+      display: none;
+      color: #007bff;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    /* On small screens, clamp to 5 lines */
+    @media (max-width: 768px) {
+      .mb-para.clamped {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .read-more {
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-4">
+    <!-- Repeat block starts -->
+    <div class="row mb-4" style="border-bottom: 1px solid #ccc;">
+      <!-- Left Column (col-8) -->
+      <div class="col-md-8 mb-3 mb-md-0 px-4 rounded">
+        <img src="/img/Blog.Main.jpg" class="img-fluid image-fixed mb-4" alt="Left Image">
+        <!-- <h4>Heading Title</h4> -->
+        <p class="mb-para">Some descriptive text below the heading for the left column content.</p>
+        <div class="d-flex align-items-center justify-content-start mb-4">
+          <img src="/img/Blog2.jpg" class="logo me-3" alt="Logo">
+          <div>
+            <div><strong class="logo-text">Name Here</strong></div>
+            <div class="logo-text-para">May 19, 2025</div>
+          </div>
+        </div>
+         <div>
+    <p id="myPara" class="mb-para clamped">
+      Short text description here. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Et maxime qui consequatur itaque explicabo natus sapiente repudiandae sit debitis cumque! Lorem ipsum dolor,
+      sit amet consectetur adipisicing elit. Numquam reprehenderit illum tenetur, fuga voluptatum, voluptas fugit,
+      iure adipisci sint laudantium alias facilis delectus! Odit a magni optio velit molestiae ipsa animi ratione
+      tenetur accusantium quo sit, labore quod sunt quia. Labore totam sit minus odit dolorem officia tempora
+      obcaecati omnis ducimus fugit, voluptate accusamus sint dicta modi ut deleniti. Quod
+      ! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis saepe modi porro alias labore molestias
+      maxime dignissimos veritatis omnis tempore iusto totam aperiam nostrum officiis sapiente cum animi amet
+      asperiores, itaque ratione accusantium eum sunt repudiandae harum? Quia, a assumenda.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facere nam voluptates nulla? Accusantium possimus dolore delectus qui totam omnis asperiores neque tenetur et quis expedita, deleniti error harum. Rerum veritatis praesentium minus velit ipsam impedit ad hic corporis repudiandae deleniti, soluta asperiores cum veniam odit, vel quaerat fugit sapiente quam est repellendus dicta? Recusandae velit non autem, doloribus sint fuga rerum temporibus corrupti atque cupiditate tenetur? Aliquam nemo provident cum. Aut vero dignissimos impedit dolorem autem! Illum, reprehenderit officia laudantium amet maiores quasi hic quidem assumenda rerum a natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit vero perspiciatis. Illum, voluptatibus impedit. Dolor, ut facere! Animi iusto exercitationem eveniet, unde aperiam, est, repudiandae nemo dolorem molestiae consequatur optio temporibus sunt vitae esse consectetur hic sed deserunt eaque vero nobis veritatis id adipisci ex! Perspiciatis soluta blanditiis, labore dolorem harum vero impedit delectus eius fuga nulla a sequi. Deleniti maxime adipisci fuga, exercitationem velit autem doloremque sequi incidunt, eos cupiditate nemo facilis unde dolor ex vitae, molestias ratione? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aut autem quas nisi obcaecati deleniti. Voluptatum enim at eaque eligendi, quaerat optio commodi omnis quisquam necessitatibus explicabo! Consequatur, maiores temporibus nihil ipsa quaerat autem minus, adipisci, officia nulla reiciendis ullam itaque sequi aliquam eius fugiat iusto dolorem ab? Recusandae, neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem totam qui atque iste illo nemo facere vitae nihil autem tempora pariatur assumenda sint omnis consectetur impedit ad ipsa illum vel et, nesciunt distinctio. Voluptatibus tenetur expedita aspernatur unde esse, officiis sunt quibusdam, quam, deserunt laboriosam eveniet et qui illum.
+    </p>
+    <span id="readMoreBtn" class="read-more">Read more</span>
+  </div>
+      </div>
+      <!-- Right Column (col-4) -->
+      <div class="col-md-4 px-3">
+        <div class="mb-4">
+          <img src="/img/Blog1.jpg" class="img-fluid image-fixed-1 mb-2" alt="Right Image">
+          <p class="mb-para my-3">Short text description here. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Et maxime qui consequatur </p>
+          <div class="d-flex align-items-center justify-content-start">
+            <img src="/img/Blog2.jpg" class="logo me-3" alt="Logo">
+            <div>
+              <div><strong class="logo-text">Name Here</strong></div>
+              <div class="logo-text-para">May 19, 2025</div>
+            </div>
+          </div>
+        </div>
+        <!--Right col 2-->
+        <div class="mb-4">
+          <img src="/img/Blog2.jpg" class="img-fluid image-fixed-1 mb-2" alt="Right Image">
+          <p class="mb-para my-2">Short text description here. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Et maxime qui consequatur itaque </p>
+          <div class="d-flex align-items-center justify-content-start">
+            <img src="/img/Blog2.jpg" class="logo me-3" alt="Logo">
+            <div>
+              <div><strong class="logo-text">Name Here</strong></div>
+              <div class="logo-text-para">May 19, 2025</div>
+            </div>
+          </div>
+        </div>
+        <!--Right col 3-->
+        <div class="mb-4">
+          <img src="/img/Blog3.jpg" class="img-fluid image-fixed-1 mb-2" alt="Right Image">
+          <p class="mb-para my-2">Short text description here. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Et maxime qui consequatur itaque</p>
+          <div class="d-flex align-items-center justify-content-start">
+            <img src="/img/Blog2.jpg" class="logo me-3" alt="Logo">
+            <div>
+              <div><strong class="logo-text">Name Here</strong></div>
+              <div class="logo-text-para">May 19, 2025</div>
+            </div>
+          </div>
+        </div>
+           <!--Right col 4-->
+        <div class="mb-4">
+          <img src="/img/Blog4.jpg" class="img-fluid image-fixed-1 mb-2" alt="Right Image">
+          <p class="mb-para my-2">Short text description here. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Et maxime qui consequatur itaque</p>
+          <div class="d-flex align-items-center justify-content-start">
+            <img src="/img/Blog2.jpg" class="logo me-3" alt="Logo">
+            <div>
+              <div><strong class="logo-text">Name Here</strong></div>
+              <div class="logo-text-para">May 19, 2025</div>
+            </div>
+          </div>
+        </div>
+           <!--Right col 5-->
+        <div class="mb-4">
+          <img src="/img/Blog5.jpg" class="img-fluid image-fixed-1 mb-2" alt="Right Image">
+          <p class="mb-para my-2">Short text description here. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Et maxime qui consequatur itaque</p>
+          <div class="d-flex align-items-center justify-content-start">
+            <img src="/img/Blog2.jpg" class="logo me-3" alt="Logo">
+            <div>
+              <div><strong class="logo-text">Name Here</strong></div>
+              <div class="logo-text-para">May 19, 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat block ends -->
+
+    <!-- Repeat 3 more times -->
+    <!-- Copy the above .row block and paste it below 3 times with different content/images -->
+  </div>
+  <script>
+    (function() {
+      const para = document.getElementById('myPara');
+      const btn  = document.getElementById('readMoreBtn');
+      let expanded = false;
+
+      btn.addEventListener('click', () => {
+        expanded = !expanded;
+        if (expanded) {
+          para.classList.remove('clamped');
+          btn.textContent = 'Read less';
+        } else {
+          para.classList.add('clamped');
+          btn.textContent = 'Read more';
+          // scroll back up into view if you want:
+          para.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    })();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
